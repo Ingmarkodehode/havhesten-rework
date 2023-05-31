@@ -1,0 +1,40 @@
+:root{
+    --textbg: #2F2E7C
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    place-items: center;
+}
+#logo{
+    padding-right: 1rem;
+}
+#logo1{
+    height: 70px;
+}
+
+#nav-bar{
+    display: flex;
+    background-color: var(--textbg);
+    color: white;
+    padding: 1rem 2rem;
+}
+
+#nav-text {
+    margin-top: 1rem;
+}
+
+#nav-items{
+    color: white;
+    padding-top: 5%;
+    align-items: center; 
+}
+#nav-items a{
+    color: white;
+    padding-top: 5%;
+    margin-right: 1rem;
+}
