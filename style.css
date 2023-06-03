@@ -38,3 +38,9 @@
     padding-top: 5%;
     margin-right: 1rem;
 }
+
+#hero-section{
+    background-image: url(./img/basseng\ med\ leker.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
