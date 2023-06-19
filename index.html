@@ -7,20 +7,27 @@
     <script src="./script/index.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Havhesten</title>
+    <!-- 22px desktop. 18 mobile-->
   </head>
   <body>
     <div id="container">
       <div>
-        <nav id="nav-bar">
+        <nav class="nav-bar">
           <div id="logo">
             <!-- Havhestens logo -->
-            <img id="logo1" src="./img/logo1.png" alt="">
+            <img
+              id="logo1"
+              src="./img/logo1.png"
+              alt="Bilde av havhesten sin logo"
+            />
           </div>
           <!-- text next to logo -->
           <div id="nav-text">
             <h4>Havhesten</h4>
-            <div id="nav-items">  
+            <!-- 22px desktop. 18 mobile questrial-->
+            <div id="nav-items">
               <a href="#">Aktiviteter</a>
+              <!-- 16 desktop figure out mobile try 16-->
               <a href="#">Basseng</a>
               <a href="#">Pris</a>
               <a href="#">Besøk Oss</a>
@@ -30,12 +37,42 @@
                 <li><a href="#">Butikk</a></li>
                 <li><a href="#">Kontakt</a></li>
               </ul> -->
-            </div>              
+            </div>
+          </div>
+          <div id="dropdown-svg">
+            <img src="./img/🦆 icon _menu_.svg" alt="" />
           </div>
         </nav>
       </div>
       <div id="hero-section">
-        <main></main>
+        <main>
+          <section>
+            <div class="first-section">
+              <span role="img" aria-label="basseng"> </span>
+              <div id="box1">
+                <h2>Velkommen til havhesten</h2>
+                <!-- 80px desktop. 32 mobile-->
+                <p>Havhesten er i vanleg drift</p>
+                <!-- add aktivitetsplan btn her i både desktop og mobile -->
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="second-section">
+              <h3>nyheter</h3>
+              <!--desktop 24 mobile 18-->
+              <h2>sommerkampanje</h2>
+              <!-- desktop 50 mobile 26-->
+              <p>
+                Bli medlem i Havhesten idag og slipp innmeldingsavgift på 250,-.
+                Kompanjen varer ut juli.
+                <!-- desktop 16  mobile 14 -->
+              </p>
+              <button>bli medlem da vel!</button>
+              <!--desktop 18-->
+            </div>
+          </section>
+        </main>
       </div>
     </div>
   </body>

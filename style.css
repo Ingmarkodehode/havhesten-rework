@@ -17,11 +17,16 @@
     height: 70px;
 }
 
-#nav-bar{
+.nav-bar{
     display: flex;
+    flex-grow: initial;
     background-color: var(--textbg);
     color: white;
     padding: 1rem 2rem;
+}
+
+.nav-bar #dropdown-svg img{
+    display:none
 }
 
 #nav-text {
@@ -39,8 +44,71 @@
     margin-right: 1rem;
 }
 
-#hero-section{
+.first-section{
     background-image: url(./img/basseng\ med\ leker.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    width:auto;
+    height: 400px;
+    border-top: solid;
+    padding: 95px 41px 21px;
+}
+
+button {
+    background-color: #0A1A4B;
+    color: #fff;
+    font-size: 20px;
+    width: 240px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.second-section {
+    text-align: center;
+    padding: 30px;
+}
+
+
+.second-section {
+
+}
+#box1 {
+    flex: none;
+    /* text-align: center; */
+    padding: 10px;
+    margin: 20px;
+    font-size: 55px;
+    font-weight: normal;
+    order: 1;
+    width: 424;
+    height: 281;
+    background-color: #fff;
+}
+
+@media (max-width: 750px) {
+    #nav-items a{
+        display: none;
+    }
+    .nav-bar #dropdown-svg img{
+        display: flex;
+        float: inline-end;
+        position: absolute right;
+        align-self: flex-end;
+        width: 125vw;
+        height: 30px;
+        padding-top: 15px;
+    }
+    .first-section h2{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .first-section p{
+        padding-top: 30px;
+        /* margin: 20px; */
+        font-size: 20px;
+        text-align: left;
+    }
 }
