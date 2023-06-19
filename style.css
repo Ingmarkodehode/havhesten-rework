@@ -21,11 +21,14 @@
 
 .nav-bar{
     display: flex;
+    position: fixed;
+    width: 100vw;
     flex-grow: initial;
     background-color: var(--textbg);
     color: white;
     padding: 1rem 2rem;
 }
+
 
 .nav-bar #dropdown-svg img{
     display:none
@@ -58,6 +61,7 @@
 }
 
 button {
+    display: flex;
     background-color: #0A1A4B;
     color: #fff;
     font-size: 20px;
@@ -67,12 +71,14 @@ button {
     align-items: center;
     text-align: center;
 }
+.center-txt{
+    text-align: center;
+}
 
 .sale {
     display: flex;
     text-align: center;
 }
-
 .second-section{
     grid-template-columns: auto auto;
     display: grid;
@@ -81,6 +87,10 @@ button {
 .sale .second-section button{
     display: inherit;
     text-align: center;
+}
+.activities{
+    display: flex;
+    flex-direction: column;
 }
 .grid-item1 {
     grid-row: 1;
@@ -104,11 +114,54 @@ button {
     grid-row: 6;
 }
 
-.activities{
-    text-align: center;
+.grid-item6 {
+    grid-area: img2;
 }
 
+.grid-item7 {
+    grid-area: kurs;
+}
 
+.grid-item8{
+    grid-area: age;
+}
+.grid-item9{
+    grid-area: img3;
+}
+.grid-item10{
+    grid-area:svøm;
+}
+.grid-item11{
+    grid-area: info;
+}
+
+.activities button{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.grid-container{
+    display: grid;
+    text-align: center;
+    gap: 5px;
+    grid-template-areas: 
+    'img2 img3'
+    'kurs svøm'
+    'age  info';
+}
+
+/* .btn{
+    display:flex;
+    background-color: #0A1A4B;
+    color: #fff;
+    font-size: 20px;
+    width: 240px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
 #box1 {
     flex: none;
     /* text-align: center; */
@@ -132,7 +185,7 @@ button {
         align-items: flex-start;
         align-self: baseline;
         justify-content: flex-end;
-        width: 100vw;
+        width: 70%;
     }
     .nav-bar #dropdown-svg img{
         display: block;
@@ -156,5 +209,9 @@ button {
         align-items: center;
         padding-bottom: 10px;
 
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
     }
 }
