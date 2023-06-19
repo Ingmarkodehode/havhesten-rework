@@ -1,4 +1,6 @@
+
 :root{
+    font-family: 'Questrial', sans-serif;
     --textbg: #2F2E7C
 }
 
@@ -66,15 +68,47 @@ button {
     text-align: center;
 }
 
-.second-section {
+.sale {
+    display: flex;
     text-align: center;
-    padding: 30px;
+}
+
+.second-section{
+    grid-template-columns: auto auto;
+    display: grid;
+    width: 100vw;
+}
+.sale .second-section button{
+    display: inherit;
+    text-align: center;
+}
+.grid-item1 {
+    grid-row: 1;
+    grid-column: 2;
+}
+.grid-item2{
+    grid-row: 2/3;
+    grid-column: 2;
+}
+.grid-item3{
+    grid-row-start: 4;
+    grid-column: 2;
+}
+.grid-item4{
+    grid-column: 1/1;
+    grid-row: 1/7
+}
+
+.grid-item5{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.activities{
+    text-align: center;
 }
 
 
-.second-section {
-
-}
 #box1 {
     flex: none;
     /* text-align: center; */
@@ -92,12 +126,16 @@ button {
     #nav-items a{
         display: none;
     }
-    .nav-bar #dropdown-svg img{
+    #dropdown-svg{
         display: flex;
-        float: inline-end;
-        position: absolute right;
-        align-self: flex-end;
-        width: 125vw;
+        padding: 0px;
+        align-items: flex-start;
+        align-self: baseline;
+        justify-content: flex-end;
+        width: 100vw;
+    }
+    .nav-bar #dropdown-svg img{
+        display: block;
         height: 30px;
         padding-top: 15px;
     }
@@ -110,5 +148,13 @@ button {
         /* margin: 20px; */
         font-size: 20px;
         text-align: left;
+    }
+    .sale .second-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+
     }
 }
