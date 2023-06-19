@@ -1,6 +1,6 @@
 
 :root{
-    font-family: 'Questrial', sans-serif;
+    /* font-family: 'Questrial', sans-serif; */
     --textbg: #2F2E7C
 }
 
@@ -60,7 +60,7 @@
     padding: 95px 41px 21px;
 }
 
-button {
+.btn {
     display: flex;
     background-color: #0A1A4B;
     color: #fff;
@@ -70,6 +70,12 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#btn2{
+    display: flex;
+    background-color: var(--textbg);
+    color: #fff;
+    border: none;
 }
 .center-txt{
     text-align: center;
@@ -176,16 +182,19 @@ button {
 }
 
 @media (max-width: 750px) {
-    #nav-items a{
+    #nav-items{
         display: none;
     }
     #dropdown-svg{
         display: flex;
         padding: 0px;
-        align-items: flex-start;
-        align-self: baseline;
+        align-items: flex-end;
+        position: fixed;
+        right: 0;
+        margin-right: 10px;
+        
         justify-content: flex-end;
-        width: 70%;
+        /* width: 50%; */
     }
     .nav-bar #dropdown-svg img{
         display: block;
